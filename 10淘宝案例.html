@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		.slider {
+			width: 520px;
+			height: 280px;
+            background: pink url("images/taobao.jpg") no-repeat ;
+			/*background-color: ;*/
+			margin: 50px auto;
+			position: relative; /*  子绝父相 */
+		}
+		.arrow-l,
+		.arrow-r {
+			position: absolute;  /* 绝对定位 */
+			width: 24px;
+			height: 36px;
+			/*display: block;  转换 */
+			top: 50%;  /* 这个% 是按照父级高度的来进行计算 */
+			margin-top: -18px;  /* 上走是负值， 自己高度的一半 */
+		}
+		.arrow-l {
+			left: 0;
+		}
+		.arrow-r {
+			right: 0;
+		}
+	.circle{
+        width: 66px;
+        height: 13px;
+        background: rgba(255,255,255,0.2);/* 盒子背景半透明*/
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -33px;
+        border-radius: 6px;
+    }
+     .circle li{
+         width: 9px;
+         height: 9px;
+         border-radius: 50%;
+         background-color:#B1B2B6;
+         float: left;
+         margin: 2px;
+     }
+     .circle .current{
+         background-color: #FF3C00;
+     }
+        </style>
+    </head>
+    <body>
+    <div class="slider">
+
+    	<a href="#" class="arrow-l"> <img src="images/left.png" ></a>
+    	<a href="#" class="arrow-r"> <img src="images/right.png" ></a>
+    	<ul class="circle"><!-- circle  小圆点 -->
+    		<li class="current"></li>  <!-- current 翻译就是 当前的意思 -->
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    	</ul>
+    </div>
+    </body>
+</html>
