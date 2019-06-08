@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新浪首页</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            /*width: px;*/
+            height:  100%;
+            width: 100%;
+            background: url("images/top.png") no-repeat  top center  ;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .box{
+            width: 1002px;
+            height: 1760px;
+            background: url("images/box.png") no-repeat 44px center 0px center;
+            /*margin: 0 auto;*/
+
+        }
+
+        .ad_R .ad_L{
+            width: 120px;
+            height: 288px;
+            background: url("images/ad-r.png") no-repeat ;
+            position: fixed;
+        }
+        .ad_L{
+            top: 100px;
+            left: 0;
+        }
+        .ad_R{
+            top: 100px;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="box"></div>
+    <div class="ad_L"></div>
+    <div class="ad_R"></div>
+</body>
+</html>
